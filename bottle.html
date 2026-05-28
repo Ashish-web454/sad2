@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Next Button Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* YOUR BACKGROUND IMAGE */
+    background-image:url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.screen{
+    width:390px;
+    height:700px;
+    position:relative;
+}
+
+/* NEXT BUTTON */
+.next-btn{
+
+    position:absolute;
+
+    /* SAME POSITION */
+    bottom:145px;
+    left:235px;
+
+    width:125px;
+    height:52px;
+
+    border:none;
+    border-radius:40px;
+
+    font-size:28px;
+    font-weight:bold;
+
+    color:#ff5d8f;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        to bottom,
+        #ffd9ea,
+        #ffbddb
+    );
+
+    box-shadow:
+    0 4px 10px rgba(255,105,180,0.25),
+    inset 0 2px 4px rgba(255,255,255,0.9);
+
+    transition:0.2s;
+}
+
+.next-btn:hover{
+    transform:scale(1.04);
+}
+
+.next-btn:active{
+    transform:scale(0.96);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+
+    <!-- NEXT BUTTON -->
+    <button class="next-btn" onclick="goNext()">
+        Next
+    </button>
+
+</div>
+
+<script>
+
+function goNext(){
+
+    /* OPEN NEXT WEBPAGE */
+
+    window.location.href = "page5.html";
+
+}
+
+</script>
+
+</body>
+</html>

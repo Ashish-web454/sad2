@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Page</title>
+
+  <!-- Cute rounded font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      width:100%;
+      height:100vh;
+
+      /* ADD YOUR BACKGROUND IMAGE HERE */
+      background-image: url('./images/main.jpg');
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-family: 'Baloo 2', cursive;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      width:100%;
+      padding-top:20px;
+    }
+
+    /* TOP TEXT */
+    .main-text{
+      color:#8B1E12;
+      font-size:55px;
+      line-height:1.2;
+      font-weight:700;
+
+      text-shadow:
+        0 0 2px white,
+        0 0 4px white,
+        2px 2px 0px #ffffff;
+
+      margin-bottom:30px;
+    }
+
+    /* GIF IMAGE */
+    .gif-box img{
+      width:250px;
+      height:auto;
+      margin-bottom:35px;
+    }
+
+    /* BUTTON AREA */
+    .button-area{
+      display:flex;
+      justify-content:center;
+      gap:50px;
+    }
+
+    /* BUTTON STYLE */
+    .cute-btn{
+      width:240px;
+      height:95px;
+
+      border:none;
+      border-radius:35px;
+
+      background:#B7260D;
+
+      color:white;
+      font-size:55px;
+      font-weight:700;
+
+      font-family:'Baloo 2', cursive;
+
+      position:relative;
+      cursor:pointer;
+
+      box-shadow:
+        inset 0 -6px 0 rgba(0,0,0,0.15),
+        0 5px 10px rgba(0,0,0,0.15);
+
+      transition:0.2s;
+    }
+
+    .cute-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* UNDERLINE */
+    .cute-btn span{
+      position:relative;
+      display:inline-block;
+    }
+
+    .cute-btn span::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-6px;
+
+      width:100%;
+      height:5px;
+
+      background:white;
+      border-radius:10px;
+    }
+
+    /* SMALL WHITE CURVES */
+    .cute-btn::before,
+    .cute-btn::after{
+      content:'';
+      position:absolute;
+
+      width:18px;
+      height:18px;
+
+      border:4px solid white;
+      border-color:white transparent transparent transparent;
+
+      border-radius:50%;
+    }
+
+    .cute-btn::before{
+      top:10px;
+      right:18px;
+      transform:rotate(25deg);
+    }
+
+    .cute-btn::after{
+      bottom:10px;
+      left:18px;
+      transform:rotate(200deg);
+    }
+
+    @media(max-width:768px){
+
+      .main-text{
+        font-size:38px;
+      }
+
+      .gif-box img{
+        width:200px;
+        
+      }
+
+      .cute-btn{
+        width:170px;
+        height:75px;
+        font-size:40px;
+      }
+
+      .button-area{
+        gap:25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TEXT -->
+    <div class="main-text">
+      I made something special for u<br>
+      do u wanna see it?
+    </div>
+
+    <!-- GIF -->
+    <div class="gif-box">
+
+      <!-- PUT YOUR GIF HERE -->
+      <img src="./images/for other things.png"  alt="Cute Penguin">
+
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="button-area">
+
+      <!-- YES BUTTON -->
+      <button class="cute-btn"
+        onclick="window.location.href='page2.html'">
+        <span>YES</span>
+      </button>
+
+      <!-- NO BUTTON -->
+      <button class="cute-btn"
+        onclick="window.location.href='no.html'">
+        <span>NO</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

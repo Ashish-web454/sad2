@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Is This Beautiful</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      width:100%;
+      height:100vh;
+
+      background:white;
+         height:100vh;
+
+    /* PUT YOUR IMAGE NAME HERE */
+    background-image: url('./images/main6.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family: Arial, sans-serif;
+      overflow:hidden;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-family:'Baloo 2', cursive;
+    }
+
+    /* MAIN CONTAINER */
+    .container{
+      width:100%;
+      height:100vh;
+
+      position:relative;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    /* LEFT TEXT */
+    .left-text{
+      position:absolute;
+
+      left:100px;
+      top:280px;
+
+      font-size:52px;
+      font-weight:700;
+
+      color:#d96a5f;
+
+      line-height:1.1;
+
+      text-align:center;
+    }
+
+    /* IMAGE ABOVE CAMERA */
+    .top-image{
+      position:absolute;
+
+      top:90px;
+    }
+
+    .top-image img{
+      width:260px;
+      height:auto;
+
+      border-radius:10px;
+    }
+
+    /* CAMERA IMAGE */
+    .camera-box{
+      position:absolute;
+
+      top:250px;
+    }
+
+    .camera-box img{
+      width:430px;
+      height:auto;
+    }
+
+    /* NEXT BUTTON */
+    .next-btn{
+      position:absolute;
+
+      right:90px;
+      top:360px;
+
+      width:210px;
+      height:85px;
+
+      border:none;
+
+      border-radius:45px;
+
+      background:#f7c1d8;
+
+      color:#ff5f5f;
+
+      font-size:40px;
+      font-weight:800;
+
+      font-family:'Baloo 2', cursive;
+
+      cursor:pointer;
+
+      box-shadow:
+      inset 0 -5px 0 rgba(0,0,0,0.08),
+      0 5px 10px rgba(0,0,0,0.1);
+
+      transition:0.2s;
+    }
+
+    .next-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* MOBILE */
+    @media(max-width:768px){
+
+      .left-text{
+        left:15px;
+        top:300px;
+
+        font-size:28px;
+      }
+
+      .top-image{
+        top:120px;
+      }
+
+      .top-image img{
+        width:140px;
+      }
+
+      .camera-box{
+        top:290px;
+      }
+
+      .camera-box img{
+        width:240px;
+      }
+
+      .next-btn{
+        width:150px;
+        height:65px;
+
+        font-size:28px;
+
+        right:15px;
+        top:390px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT TEXT -->
+    <div class="left-text">
+      Who is this<br>
+      beautiful??
+    </div>
+
+    <!-- YOUR IMAGE -->
+    <div class="top-image">
+
+      <!-- PUT YOUR IMAGE HERE -->
+      <img src="girl.jpg" alt="Beautiful Girl">
+
+    </div>
+
+    <!-- CAMERA IMAGE -->
+    <div class="camera-box">
+
+      <!-- PUT YOUR CAMERA IMAGE HERE -->
+      <img src="camera.png" alt="Camera">
+
+    </div>
+
+    <!-- NEXT BUTTON -->
+    <button class="next-btn"
+    onclick="window.location.href='page5.html'">
+
+      Next
+
+    </button>
+
+  </div>
+
+</body>
+</html>

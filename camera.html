@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Page</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      width:100%;
+      height:100vh;
+
+      background:white;
+       height:100vh;
+
+    /* PUT YOUR IMAGE NAME HERE */
+    background-image: url('./images/main5.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family: Arial, sans-serif;
+      overflow:hidden;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-family:'Baloo 2', cursive;
+    }
+
+    /* MAIN CONTAINER */
+    .container{
+      width:100%;
+      height:100vh;
+
+      position:relative;
+
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    /* TOP TEXT */
+    .main-text{
+      margin-top:25px;
+
+      font-size:58px;
+      font-weight:800;
+
+      color:#d96a5f;
+
+      text-align:center;
+
+      letter-spacing:2px;
+    }
+
+    .sub-text{
+      font-size:38px;
+      font-weight:600;
+
+      color:#c98d8d;
+
+      margin-top:-5px;
+    }
+
+    /* CAMERA IMAGE */
+    .camera-box{
+      width:100%;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      margin-top:30px;
+    }
+
+    .camera-box img{
+      width:380px;
+      height:auto;
+    }
+
+    /* BUTTON */
+    .picture-btn{
+      position:absolute;
+
+      right:70px;
+      top:420px;
+
+      width:290px;
+      height:90px;
+
+      border:none;
+
+      border-radius:50px;
+
+      background:#ffd4df;
+      
+      color:#ff5f5f;
+
+      font-size:42px;
+      font-weight:800;
+
+      font-family:'Baloo 2', cursive;
+
+      cursor:pointer;
+
+      box-shadow:
+      inset 0 -5px 0 rgba(0,0,0,0.08),
+      0 5px 10px rgba(0,0,0,0.1);
+
+      transition:0.2s;
+    }
+
+    .picture-btn:hover{
+      transform:scale(1.05);
+    }
+
+    /* MOBILE */
+    @media(max-width:768px){
+
+      .main-text{
+        font-size:34px;
+        margin-top:35px;
+      }
+
+      .sub-text{
+        font-size:24px;
+      }
+
+      .camera-box{
+        margin-top:50px;
+      }
+
+      .camera-box img{
+        width:240px;
+      }
+
+      .picture-btn{
+        width:180px;
+        height:100px;
+
+        font-size:24px;
+
+        right:15px;
+        top:390px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TOP TEXT -->
+    <div class="main-text">
+      Wow! That looks so good on you
+    </div>
+
+    <div class="sub-text">
+      Now, get ready to take a picture
+    </div>
+
+    <!-- CAMERA IMAGE -->
+    <div class="camera-box">
+
+      <!-- PUT YOUR CAMERA IMAGE HERE -->
+      <img src="./images/camera1.png" alt="Camera">
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="picture-btn"
+    onclick="window.location.href='picture.html'">
+
+      Take the picture
+
+    </button>
+
+  </div>
+
+</body>
+</html>
